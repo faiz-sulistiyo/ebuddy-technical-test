@@ -24,7 +24,7 @@ export const authApiSlice = createApi({
           await queryFulfilled;
           dispatch(showToast({ message: "Successfully logged in", severity: "success", duration: 2000 }));
         } catch (err) {
-          dispatch(showToast({ message: (err as any)?.error?.message || "Failed logging in", severity: "error", duration: 2000 }));
+          dispatch(showToast({ message: (err as { error: { message: string } })?.error?.message || "Failed logging in", severity: "error", duration: 2000 }));
         }
       },
     }),
@@ -44,7 +44,7 @@ export const authApiSlice = createApi({
           await queryFulfilled;
           dispatch(showToast({ message: "Successfully registered user", severity: "success", duration: 2000 }));
         } catch (err) {
-          dispatch(showToast({ message: (err as any)?.error?.message || "Failed registering user", severity: "error", duration: 2000 }));
+          dispatch(showToast({ message: (err as { error: { message: string } })?.error?.message || "Failed registering user", severity: "error", duration: 2000 }));
         }
       },
     }),
