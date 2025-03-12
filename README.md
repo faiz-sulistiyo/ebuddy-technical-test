@@ -24,16 +24,8 @@ yarn dev
 ## Project Structure
 
 - `apps/backend-repo`: Backend (Firebase Functions)
-- `apps/web`: Frontend (Next.js)
-- `@repo/ui`: Shared React components
-- `@repo/eslint-config`: Shared ESLint config
-- `@repo/typescript-config`: Shared TypeScript config
-
-## Features
-
-- TypeScript
-- ESLint & Prettier
-- Turbo Caching & Remote Caching
+- `apps/frontend-repo`: Frontend (Next.js)
+- `@packages/ui`: Shared React components
 
 ## Useful Commands
 
