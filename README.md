@@ -25,7 +25,7 @@ yarn dev
 
 - `apps/backend-repo`: Backend (Firebase Functions)
 - `apps/frontend-repo`: Frontend (Next.js)
-- `@packages/ui`: Shared React components
+- `@packages`: Shared 
 
 ## Useful Commands
 
